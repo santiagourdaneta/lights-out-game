@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Juega Lights Out!</title>
+    <meta name="description" content="Juega Lights Out online. Un desafiante juego de lógica donde apagas todas las luces.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h1>Lights Out</h1>
+
+    <div class="game-info">
+        <p>Movimientos: <span id="moves-count">0</span></p>
+    </div>
+
+    <div id="board" class="board">
+        </div>
+
+    <div class="game-messages">
+        <p id="message"></p>
+        <button id="reset-button" style="display: none;">Nuevo Juego</button>
+    </div>
+    <section class="how-to-play-section">
+        <h2>🕹️ Cómo Jugar</h2>
+        <p>La mecánica es sencilla, pero requiere estrategia:</p>
+
+        <ul>
+            <li>
+                <strong>Haz clic en cualquier luz:</strong> Cuando tocas una celda del tablero, no solo cambia el estado de esa luz.
+            </li>
+            <li>
+                <strong>Efecto en cadena:</strong> La luz en la que hiciste clic cambiará su estado (si estaba encendida, se apaga; si estaba apagada, se enciende).
+            </li>
+            <li>
+                <strong>¡Y sus vecinas también!:</strong> De forma secuencial, las luces adyacentes a la que clicaste (arriba, abajo, izquierda y derecha) también cambiarán su estado. Verás un pequeño "pulso" blanco indicando el cambio.
+            </li>
+            <li>
+                <strong>Piensa un paso adelante:</strong> Cada clic altera el tablero de una manera predecible. La clave es encontrar la secuencia correcta de clics que te permita apagar todas las luces.
+            </li>
+        </ul>
+    </section>
+    <footer>
+        <p>Desarrollado por <a href="https://github.com/santiagourdaneta/" target="_blank" rel="noopener noreferrer">Santiago Urdaneta</a></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
